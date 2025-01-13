@@ -1,0 +1,89 @@
+[project]
+name = "genailayers"
+version = "0.1.0"
+description = "Every layer of a production GenAI system, one standalone Python file per concept"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "python-dotenv>=1.0",
+    "httpx>=0.27",
+    "tenacity>=8.0",
+    "structlog>=24.0",
+    "numpy>=1.26",
+    "scikit-learn>=1.4",
+    "umap-learn>=0.5",
+    "tiktoken>=0.7",
+    "tokenizers>=0.19",
+    "sentencepiece>=0.2",
+    "nltk>=3.8",
+    "spacy>=3.7",
+    "rank-bm25>=0.2",
+    "gensim>=4.3",
+    "torch>=2.2",
+    "transformers>=4.40",
+    "en-core-web-sm",
+    "nest-asyncio>=1.6.0",
+    "requests>=2.34.2",
+    "matplotlib>=3.11.2",
+    "datasets>=5.0.1",
+    "peft>=0.21.0",
+    "trl>=1.13.0",
+    "sentence-transformers>=6.1.0",
+    "datasketch>=2.0.0",
+    "accelerate>=1.15.0",
+    "mlx-lm>=0.31.3",
+    "llama-cpp-python>=0.3.35",
+    "mlflow>=3.16.1",
+    "tensorboard>=2.21.0",
+    "wandb>=0.30.0",
+    "einops>=0.8.2",
+    "safetensors>=0.8.0",
+    "fastapi>=0.141.1",
+    "uvicorn>=0.53.0",
+    "psutil>=7.2.2",
+    "anthropic>=1.7.0",
+    "litellm>=1.101.0",
+    "langchain-openai>=1.6.2",
+    "llama-index-llms-openai>=0.8.1",
+    "instructor>=1.17.0",
+    "vcrpy>=8.3.0",
+    "google-genai>=2.24.0",
+    "mistralai>=2.10.1",
+    "cohere>=7.1.1",
+    "reportlab>=5.0.1",
+    "pillow>=12.3.0",
+    "dspy>=3.3.1",
+    "jinja2>=3.1.6",
+    "langchain>=1.4.2",
+    "langchain-core>=1.6.3",
+    "llmlingua>=0.2.2",
+    "textgrad>=0.1.8",
+    "pybreaker>=1.4.1",
+    "aiolimiter>=1.3.0",
+    "email-validator>=2.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "nbconvert>=7.17.1",
+    "nbformat>=5.11.1",
+    "pyright>=1.1.414",
+    "ruff>=0.5",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+per-file-ignores = { "scripts/*" = ["E501"], "[0-9][0-9]_*/*.py" = ["E402", "F811"], "*.ipynb" = ["E402", "F811"] }
+select = ["E", "F", "I", "UP", "B"]
