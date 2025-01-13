@@ -2,7 +2,7 @@
 
 Every layer of a production GenAI system as code you can run: foundations, model training & serving, providers, prompting, RAG, memory, tools, agents, multi-agent, multimodal, evaluation, safety and LLMOps. 17 layers, 65 subsections, 600 topics — real APIs, real outputs saved in every notebook, one page per topic with diagrams and trade-offs.
 
-## How every topic is taught
+## How every topic is written
 
 One page per topic, always in the same order:
 
