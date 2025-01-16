@@ -31,7 +31,7 @@ Follows [GenAI_Master_Topic_List.md](GenAI_Master_Topic_List.md). One folder per
 | [0.1 Python for GenAI](00_foundations/0_1_python_for_genai/README.md) | done — 22 notebooks, one per topic |
 | [0.2 Math / ML basics](00_foundations/0_2_math_ml_basics/README.md) | done — 22 notebooks, one per topic |
 | [0.3 Classical NLP](00_foundations/0_3_classical_nlp/README.md) | done — 19 notebooks, one per topic |
-| 0.4 Deep learning basics | in progress |
+| [0.4 Deep learning basics](00_foundations/0_4_deep_learning_basics/README.md) | done — 17 notebooks, one per topic |
 | 1 Model layer · 2 Provider layer · 3 Prompt engineering · 4 Data & ingestion · 5 RAG | next |
 | 6 Memory · 7 Tools & protocols · 8 Agents · 9 Agentic RAG · 10 Multi-agent | planned |
 | 11 Multimodal · 12 Evaluation · 13 Safety · 14 LLMOps · 15 Apps · 16 Cost · 17 Emerging | planned |
